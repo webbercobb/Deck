@@ -4,171 +4,178 @@
     <meta charset="UTF-8">
     <title>Connor Wright - Artist Overview</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
-
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500&display=swap');
+        
         :root {
-            --primary: #2a3b4d;
-            --accent: #c79a6b;
-            --text: #444444;
+            --primary: #1a1a1a;
+            --accent: #8b5d33;
+            --light-bg: #f9f6f2;
         }
 
         body {
             margin: 0;
-            padding: 40px 60px;
-            font-family: 'Lato', sans-serif;
-            color: var(--text);
-            line-height: 1.6;
+            padding: 60px 80px;
+            font-family: 'Inter', sans-serif;
+            color: var(--primary);
+            line-height: 1.8;
+            background: white;
         }
 
         .header {
-            border-bottom: 4px solid var(--accent);
-            padding-bottom: 20px;
-            margin-bottom: 40px;
+            border-bottom: 3px solid var(--accent);
+            margin-bottom: 50px;
+            padding-bottom: 30px;
         }
 
         h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5em;
-            color: var(--primary);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4.5rem;
             margin: 0;
-            letter-spacing: -1px;
+            font-weight: 600;
+            letter-spacing: -1.5px;
         }
 
         h2 {
-            font-family: 'Playfair Display', serif;
-            color: var(--accent);
-            font-size: 2.2em;
-            margin-top: 40px;
-            border-bottom: 2px solid var(--primary);
-            padding-bottom: 10px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.8rem;
+            margin: 60px 0 30px;
+            border-left: 4px solid var(--accent);
+            padding-left: 25px;
         }
 
-        .section {
-            margin-bottom: 60px;
+        .section-content {
+            margin-left: 30px;
+            max-width: 800px;
+        }
+
+        .image-wrapper {
+            margin: 40px 0;
             position: relative;
-        }
-
-        .image-container {
-            width: 100%;
-            height: 400px;
-            background-color: #f5f5f5;
-            margin: 20px 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
             border-radius: 4px;
             overflow: hidden;
         }
 
-        .highlight {
-            color: var(--accent);
-            font-weight: 700;
+        img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 4px;
         }
 
-        ul {
-            list-style-type: none;
+        .highlight-box {
+            background: var(--light-bg);
+            padding: 30px;
+            margin: 40px 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        .client-list {
+            columns: 2;
+            margin: 30px 0;
+        }
+
+        .client-list li {
+            margin-bottom: 15px;
+            position: relative;
             padding-left: 20px;
         }
 
-        li {
-            margin-bottom: 15px;
-            position: relative;
-        }
-
-        li:before {
-            content: "•";
-            color: var(--accent);
+        .client-list li:before {
+            content: "—";
             position: absolute;
-            left: -20px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin: 40px 0;
+            left: 0;
+            color: var(--accent);
         }
 
         .quote {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            margin: 50px 0;
+            padding: 40px;
+            background: var(--light-bg);
+            text-align: center;
             font-style: italic;
-            font-size: 1.1em;
-            padding: 20px;
-            background: #f8f8f8;
-            border-left: 4px solid var(--accent);
         }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Connor Wright</h1>
-        <p style="font-size: 1.4em; color: var(--primary); margin-top: 5px;">Artist Overview</p>
+        <p style="font-size: 1.5rem; margin-top: 10px; letter-spacing: 2px;">ARTIST OVERVIEW</p>
     </div>
 
-    <div class="section">
-        <h2>Background & Early Career</h2>
-        <p>Connor Wright is a multidisciplinary artist based in New York. His work explores the tension between abstraction and identity...</p>
-        
-        <!-- Image 1 -->
-        <div class="image-container">
-            <!-- Replace with image1.jpg -->
+    <!-- BACKGROUND & EARLY CAREER -->
+    <h2>Background & Early Career</h2>
+    <div class="section-content">
+        <p>Connor Wright is a multidisciplinary artist based in New York. His work explores the tension between abstraction and identity, often using fragmented figuration, bold color, and layered mark-making to push the boundaries of historical visual languages.</p>
+
+        <div class="image-wrapper">
+            <!-- IMAGE 1: Mural -->
+            <img src="image1.jpg" alt="Early mural work">
         </div>
 
-        <div class="grid">
-            <div>
-                <h3>Key Milestones</h3>
-                <ul>
-                    <li>300-square-foot viral high school mural</li>
-                    <li>Facebook Artist-in-Residence</li>
-                    <li>Featured in NY Times (2020)</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Select Clients</h3>
-                <ul>
-                    <li>Facebook/Meta</li>
-                    <li>Broadway's TBD Productions</li>
-                    <li>St. Louis Cardinals</li>
-                    <li>Maybelline</li>
-                </ul>
-            </div>
+        <p>Wright’s career began with large-scale installations and public commissions. As a senior in high school, he created a 300-square-foot mural that gained viral attention, leading to an invitation to be Facebook’s Artist-in-Residence before his senior year of college. Shortly after, Mark Zuckerberg publicly praised his work, accelerating his visibility. Since then, he has completed major commissions for corporate and institutional clients including:</p>
+
+        <ul class="client-list">
+            <li>Facebook</li>
+            <li>Broadway’s TBD Productions</li>
+            <li>The St. Louis Cardinals</li>
+            <li>Maybelline</li>
+        </ul>
+
+        <div class="image-wrapper">
+            <!-- IMAGE 2: Say Their Names Cemetery -->
+            <img src="image2.jpg" alt="Say Their Names installation">
+        </div>
+
+        <div class="highlight-box">
+            <h3>Critical Recognition</h3>
+            <p>His work received significant recognition with the “Say Their Names” Cemetery, an installation memorializing victims of police brutality, which was featured on the front page of The New York Times in 2020.</p>
         </div>
     </div>
 
-    <div class="section">
-        <h2>Current Work & Direction</h2>
-        <p>Wright’s practice has shifted toward painting, with a focus on large-scale oil stick works...</p>
-        
-        <!-- Image 2 -->
-        <div class="image-container">
-            <!-- Replace with image2.jpg -->
+    <!-- CURRENT WORK & DIRECTION -->
+    <h2>Current Work & Direction</h2>
+    <div class="section-content">
+        <p>Wright’s practice has shifted toward painting, with a focus on large-scale oil stick works that engage with abstraction and figuration. His recent ZOO series is an exploration of gesture, color, and scale, incorporating bold mark-making and sculptural textures that create a sense of movement and layered meaning.</p>
+
+        <div class="image-wrapper">
+            <!-- IMAGE 3: ZOO Series -->
+            <img src="image3.jpg" alt="ZOO Series painting">
+        </div>
+
+        <p>His upcoming Mask series expands on this approach, further breaking down the human face into a fragmented visual language. These works engage with historical and cultural references while remaining deeply personal, pushing the dialogue between identity and abstraction.</p>
+
+        <div class="image-wrapper">
+            <!-- IMAGE 4: Mask Series -->
+            <img src="image4.jpg" alt="Mask Series work">
+        </div>
+    </div>
+
+    <!-- COLLECTORS & MARKET PRESENCE -->
+    <h2>Collectors & Market Presence</h2>
+    <div class="section-content">
+        <p>Over the past two years, Wright has sold more than $400,000 in artwork directly to private collectors. His work is in the collections of Susan and Michael Hort, Bjarne Lie, and Katja Tangen (Kunstsilo, Norway), among others. He has built a strong independent market but is now looking to establish gallery representation to further develop his practice and expand institutional placement.</p>
+
+        <div class="image-wrapper">
+            <!-- IMAGE 5: Collector Piece -->
+            <img src="image5.jpg" alt="Collection artwork example">
         </div>
 
         <div class="quote">
-            "His recent ZOO series is an exploration of gesture, color, and scale, incorporating bold mark-making and sculptural textures..."
+            "Seeking gallery representation to further develop his practice and expand institutional placement"
         </div>
     </div>
 
-    <div class="section">
-        <h2>Collectors & Market Presence</h2>
-        <div class="grid">
-            <div>
-                <h3>Notable Collectors</h3>
-                <ul>
-                    <li>Susan & Michael Hort</li>
-                    <li>Bjarne Lie</li>
-                    <li>Katja Tangen</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Market Position</h3>
-                <ul>
-                    <li>$400k+ private sales</li>
-                    <li>International collections</li>
-                    <li>Seeking gallery representation</li>
-                </ul>
-            </div>
-        </div>
-        
-        <!-- Image 3 -->
-        <div class="image-container">
-            <!-- Replace with image3.jpg -->
+    <!-- NEXT STEPS -->
+    <h2>Next Steps</h2>
+    <div class="section-content">
+        <p>Wright is currently refining his new body of work and is interested in positioning it within a broader curatorial context. His focus is on developing relationships with galleries and institutions that align with his vision and can help support the next phase of his career.</p>
+
+        <div class="image-wrapper">
+            <!-- IMAGE 6: Upcoming Work -->
+            <img src="image6.jpg" alt="Upcoming project preview">
         </div>
     </div>
 </body>
