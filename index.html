@@ -26,6 +26,21 @@
             margin-bottom: 50px;
             padding-bottom: 30px;
         }
+        
+        .header-image {
+    margin: 0 -80px; /* Full-bleed effect */
+    padding: 30px 0;
+    background: var(--light-bg);
+}
+
+.header-image img {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    display: block;
+    border: 12px solid white;
+    box-sizing: border-box;
+}
 
         h1 {
             font-family: 'Cormorant Garamond', serif;
@@ -105,8 +120,13 @@
         <p style="font-size: 1.5rem; margin-top: 10px; letter-spacing: 2px;">ARTIST OVERVIEW</p>
     </div>
 
-    <!-- BACKGROUND & EARLY CAREER -->
-    <h2>Background & Early Career</h2>
+    <!-- Add this right after the header -->
+<div class="header-image">
+    <img src="studio.jpg" alt="Connor Wright in studio" style="width:100%; height:600px; object-fit: cover; margin: 40px 0; border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+</div>
+
+<!-- Then comes your existing Background & Early Career section -->
+<h2>Background & Early Career</h2>
     <div class="section-content">
         <p>Connor Wright is a multidisciplinary artist based in New York. His work explores the tension between abstraction and identity, often using fragmented figuration, bold color, and layered mark-making to push the boundaries of historical visual languages.</p>
 
