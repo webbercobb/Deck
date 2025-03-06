@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,21 +27,23 @@
             margin-bottom: 50px;
             padding-bottom: 30px;
         }
-        
-        .header-image {
-    margin: 0 -80px; /* Full-bleed effect */
-    padding: 30px 0;
-    background: var(--light-bg);
-}
 
-.header-image img {
-    width: 90%;
-    height: 500px;
-    margin: 0 auto;
-    display: block;
-    border: 12px solid white;
-    box-sizing: border-box;
-}
+        .header-image {
+            margin: 0 -80px;
+            padding: 30px 0;
+            background: var(--light-bg);
+        }
+
+        .header-image img {
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            display: block;
+            border: 12px solid white;
+            box-sizing: border-box;
+            object-fit: cover;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
 
         h1 {
             font-family: 'Cormorant Garamond', serif;
@@ -73,8 +76,8 @@
 
         img {
             width: 100%;
-            height: 500px;
-            object-fit: cover;
+            height: auto;
+            object-fit: contain;
             border-radius: 4px;
         }
 
@@ -120,32 +123,30 @@
         <p style="font-size: 1.5rem; margin-top: 10px; letter-spacing: 2px;">ARTIST OVERVIEW</p>
     </div>
 
-    <!-- Add this right after the header -->
-<div class="header-image">
-    <img src="studio.jpg" alt="Connor Wright in studio" style="width:100%; height:600px; object-fit: cover; margin: 40px 0; border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
-</div>
+    <!-- HEADER IMAGE -->
+    <div class="header-image">
+        <img src="studio.jpg" alt="Connor Wright in studio">
+    </div>
 
-<!-- Then comes your existing Background & Early Career section -->
-<h2>Background & Early Career</h2>
+    <!-- BACKGROUND & EARLY CAREER -->
+    <h2>Background & Early Career</h2>
     <div class="section-content">
         <p>Connor Wright is a multidisciplinary artist based in New York. His work explores the tension between abstraction and identity, often using fragmented figuration, bold color, and layered mark-making to push the boundaries of historical visual languages.</p>
 
         <div class="image-wrapper">
-            <!-- IMAGE 1: Mural -->
             <img src="image1.jpg" alt="Early mural work">
         </div>
 
-        <p>Wright’s career began with large-scale installations and public commissions. As a senior in high school, he created a 300-square-foot mural that gained viral attention, leading to an invitation to be Facebook’s Artist-in-Residence before his senior year of college. Shortly after, Mark Zuckerberg publicly praised his work, accelerating his visibility. Since then, he has completed major commissions for corporate and institutional clients including:</p>
+        <p>Wright’s career began with large-scale installations and public commissions. As a senior in high school, he created a 300-square-foot mural that gained viral attention, leading to an invitation to participate in Meta’s Artist-in-Residence program the summer before his freshman year of college. Shortly after, Mark Zuckerberg publicly praised his work, accelerating his visibility. Since then, he has completed major commissions for corporate and institutional clients including:</p>
 
         <ul class="client-list">
-            <li>Facebook</li>
+            <li>Meta</li>
             <li>Broadway’s TBD Productions</li>
             <li>The St. Louis Cardinals</li>
             <li>Maybelline</li>
         </ul>
 
         <div class="image-wrapper">
-            <!-- IMAGE 2: Say Their Names Cemetery -->
             <img src="image2.jpg" alt="Say Their Names installation">
         </div>
 
@@ -158,17 +159,15 @@
     <!-- CURRENT WORK & DIRECTION -->
     <h2>Current Work & Direction</h2>
     <div class="section-content">
-        <p>Wright’s practice has shifted toward painting, with a focus on large-scale oil stick works that engage with abstraction and figuration. His recent ZOO series is an exploration of gesture, color, and scale, incorporating bold mark-making and sculptural textures that create a sense of movement and layered meaning.</p>
+        <p>Wright’s practice has shifted toward painting, with a focus on large-scale oil stick works that engage with abstraction and figuration. His recent Zoo series is an exploration of gesture, color, and scale, incorporating bold mark-making and sculptural textures that create a sense of movement and layered meaning.</p>
 
         <div class="image-wrapper">
-            <!-- IMAGE 3: ZOO Series -->
-            <img src="image3.jpg" alt="ZOO Series painting">
+            <img src="image3.jpg" alt="Zoo Series painting">
         </div>
 
         <p>His upcoming Mask series expands on this approach, further breaking down the human face into a fragmented visual language. These works engage with historical and cultural references while remaining deeply personal, pushing the dialogue between identity and abstraction.</p>
 
         <div class="image-wrapper">
-            <!-- IMAGE 4: Mask Series -->
             <img src="image4.jpg" alt="Mask Series work">
         </div>
     </div>
@@ -176,10 +175,9 @@
     <!-- COLLECTORS & MARKET PRESENCE -->
     <h2>Collectors & Market Presence</h2>
     <div class="section-content">
-        <p>Over the past two years, Wright has sold more than $400,000 in artwork directly to private collectors. His work is in the collections of Susan and Michael Hort, Bjarne Lie, and Katja Tangen (Kunstsilo, Norway), among others. He has built a strong independent market but is now looking to establish gallery representation to further develop his practice and expand institutional placement.</p>
+        <p>Over the past two years, Wright has sold more than $400,000 in artwork directly to private collectors. He has made close connections with Susan and Michael Hort, Nicolai and Katja Tangen, Michael Xufu, among others. He has built a strong independent market but is now looking to establish gallery representation to further develop his practice and expand institutional placement.</p>
 
         <div class="image-wrapper">
-            <!-- IMAGE 5: Collector Piece -->
             <img src="image5.jpg" alt="Collection artwork example">
         </div>
 
@@ -194,7 +192,6 @@
         <p>Wright is currently refining his new body of work and is interested in positioning it within a broader curatorial context. His focus is on developing relationships with galleries and institutions that align with his vision and can help support the next phase of his career.</p>
 
         <div class="image-wrapper">
-            <!-- IMAGE 6: Upcoming Work -->
             <img src="image6.jpg" alt="Upcoming project preview">
         </div>
     </div>
